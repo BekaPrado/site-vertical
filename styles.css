@@ -1,20 +1,27 @@
+/* Reset básico */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
+    font-size: 20px;
 }
+
 ul, ol, li {
     list-style: none;
 }
+
 html, body {
     scroll-behavior: smooth;
 }
+
+/* Estilos para o header */
 header {
     position: fixed;
-    background-color: #333;
+    background-color: #ffb0d7;
     width: 100vw;
 }
 
@@ -30,30 +37,130 @@ header nav a {
     transition: background-color 1s;
 }
 
-header nav a:hover{
-    background-color: lightblue;
-    color: black;
+header nav a:hover {
+    background-color: rgb(255, 152, 234);
+    color: rgb(255, 0, 212);
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
 }
 
-.grupo{
+/* Layout para a seção Tulipas */
+#tulipas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    padding: 0 50px; /* Espaçamento nas laterais */
+    background-color: #fde2e2;
+}
+
+/* Estilos para o container das imagens */
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.imagens img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+#peonias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    padding: 0 50px; /* Espaçamento nas laterais */
+    background-color: #fde2e2;
+}
+
+#peonias .imagens {
+    display: flex;
+    grid-gap: 20px;
+}
+
+#peonias .imagens img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+#peonias .texto h1 {
+    font-size: 150px;
+}
+
+
+/* Estilos para o texto */
+.texto {
+    margin-left: 230px;
+    flex: 1; /* Ocupar o restante do espaço disponível */
+}
+
+.texto h1 {
+    font-size: 100px;
+    color: white;
+}
+#rosas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    padding: 0 50px; /* Espaçamento nas laterais */
+    background-color: #fde2e2;
+}
+
+#rosas .imagens {
+    display: flex;
+    grid-gap: 20px;
+}
+
+#rosas .imagens img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+#rosas .texto h1 {
+    font-size: 150px;
+}
+
+
+/* Estilos para o texto */
+.texto {
+    margin-left: 230px;
+    flex: 1; /* Ocupar o restante do espaço disponível */
+}
+
+.texto h1 {
+    font-size: 100px;
+    color: white;
+}
+/* Estilos para as outras seções */
+.grupo {
     height: 100vh;
 }
-#vermelho {
-    background-color: #ff6b6b;
+
+#peonias {
+    background-color: #f9d8d8;
 }
 
-#verde {
-    background-color: #1dd1a1;
+#rosas {
+    background-color: #fde2e2;
 }
 
-#azul {
-    background-color: #54a0ff;
+#jasmin {
+    background: #f9d8d8;
 }
 
-#amarelo {
-    background: #feca57;
-}
-
-#roxo {
-    background-color: purple;
+#hortencia {
+    background-color: #fde2e2;
 }
