@@ -21,7 +21,7 @@ html, body {
 /* Estilos para o header */
 header {
     position: fixed;
-    background-color: #ffb0d7;
+    background-color: #000000;
     width: 100vw;
 }
 
@@ -48,119 +48,188 @@ section {
     height: 100vh;
     padding: 0 50px;
 }
-
-/* Layout para a seção Tulipas */
-#tulipas {
+/* _______________________________________________________________________________________ */
+#chocochilli {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* Ocupa a altura total da viewport */
     padding: 0 50px; /* Espaçamento nas laterais */
-    background-color: #fde2e2;
+    background-color: #351e1e;
 }
 
 /* Estilos para o container das imagens */
 .imagens {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 200px;
 }
 
 .imagens img {
-    width: 400px;
-    height: 400px;
+    width: 1000px;
+    height: 800px;
     margin-bottom: 20px;
     object-fit: cover;
 }
-#peonias {
+
+
+/* _______________________________________________________________________________________ */
+#glosslicious {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* Ocupa a altura total da viewport */
     padding: 0 50px; /* Espaçamento nas laterais */
-    background-color: #fde2e2;
+    background-color: mediumvioletred; /* Cor de fundo desejada */
 }
 
-#peonias .imagens {
-    display: flex;
-    grid-gap: 20px;
+/* Estilos específicos para alinhar a imagem à direita */
+#glosslicious .imagens {
+    order: 2; /* Garante que a imagem fique à direita */
+    padding-left: 500px; /* Adiciona espaço à esquerda da imagem */
 }
 
-#peonias .imagens img {
-    width: 500px;
-    height: 500px;
-    margin-bottom: 20px;
-    object-fit: cover;
+/* Opcional: você também pode aplicar uma margem direta na imagem */
+#glosslicious .imagens img {
+    margin-right: 20px; /* Ajusta a margem para mover a imagem para a direita */
 }
 
-#peonias .texto h1 {
-    font-size: 150px;
-}
-
-
-/* Estilos para o texto */
-.texto {
-    margin-left: 230px;
-    flex: 1; /* Ocupar o restante do espaço disponível */
-}
-
-.texto h1 {
-    font-size: 100px;
-    color: white;
-}
-#rosas {
+/* _______________________________________________________________________________________ */
+/* Estilos para a seção GreenChilli */
+#greenchilli {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* Ocupa a altura total da viewport */
     padding: 0 50px; /* Espaçamento nas laterais */
-    background-color: #fde2e2;
+    background-color: #c5e1a5; /* Cor de fundo desejada */
 }
 
-#rosas .imagens {
-    display: flex;
-    grid-gap: 20px;
-}
-
-#rosas .imagens img {
-    width: 500px;
-    height: 500px;
-    margin-bottom: 20px;
+/* Ajuste do tamanho da imagem para a GreenChilli */
+#greenchilli .imagens img {
+    width: 350px; /* Reduz o tamanho da largura da imagem */
+    height: 930px; /* Reduz o tamanho da altura da imagem */
     object-fit: cover;
 }
 
-#rosas .texto h1 {
-    font-size: 150px;
+#greenchilli .imagens{
+    margin-left:300px
+}
+#greenchilli .texto {
+    order: 1;
+    margin-left: -40px; /* Mover o texto para o lado esquerdo */
 }
 
+/* _______________________________________________________________________________________ */
 
-/* Estilos para o texto */
-.texto {
-    margin-left: 230px;
-    flex: 1; /* Ocupar o restante do espaço disponível */
+#glossipgirl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    padding: 0 50px; /* Espaçamento nas laterais */
+    background-color: #000000; /* Cor de fundo desejada */
 }
+
+/* Ajuste do tamanho da imagem para a GreenChilli */
+#glossipgirl .imagens img {
+    width: 350px; /* Reduz o tamanho da largura da imagem */
+    height: 930px; /* Reduz o tamanho da altura da imagem */
+    object-fit: cover;
+}
+
+#glossipgirl .imagens {
+    order: 2; /* Coloca a imagem à direita */
+    margin-right: -70px; /* Ajusta a posição da imagem para a direita */
+}
+
+#glossipgirl .imagens img {
+    width: 350px; /* Largura da imagem */
+    height: 930px; /* Altura da imagem */
+    object-fit: cover;
+}
+
+/* Ajuste do texto para ficar à esquerda */
+#glossipgirl .texto {
+    order: 1; /* Coloca o texto à esquerda */
+    margin-left: 150px; /* Ajusta a posição do texto para a esquerda */
+    
+}
+
+/* _______________________________________________________________________________________ */
+
+#glossipgold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; 
+    padding: 0 50px; 
+    background-color: #ffffff; 
+}
+
+/* Ajuste do tamanho da imagem para a GreenChilli */
+#glossipgold .imagens img {
+    width: 360px;
+    height: 940px; 
+    object-fit: cover;
+}
+
+#glossipgold .imagens {
+    order: 2; 
+    margin-right: -70px; 
+}
+
+#glossipgold .imagens img {
+    width: 350px; 
+    height: 930px; 
+    object-fit: cover;
+}
+
 
 .texto h1 {
-    font-size: 100px;
+    font-size: 80px; 
     color: white;
-}
-/* Estilos para as outras seções */
-.grupo {
-    height: 100vh;
+    margin: 0;
 }
 
-#peonias {
-    background-color: #f9d8d8;
+
+
+/* ChocoChilli */
+#chocochilli .texto h1 {
+    font-size: 100px;
+    color: rgb(255, 255, 255); 
+    margin-top: 50px;   
+    margin-right: 200px; 
 }
 
-#rosas {
-    background-color: #fde2e2;
+/* GlossLicious */
+#glosslicious .texto h1 {
+    font-size: 90px;
+    color: #ffffff;
+    margin-top: 30px;    
+    margin-left: 100px;   
 }
 
-#jasmin {
-    background: #f9d8d8;
+/* GreenChilli */
+#greenchilli .texto h1 {
+    font-size: 110px;
+    color: #4CAF50;
+    margin-top: 60px;    /* Move para baixo */
+    margin-right: 300px; /* Move para a esquerda */
 }
 
-#hortencia {
-    background-color: #fde2e2;
+/* GlossipGirl */
+#glossipgirl .texto h1 {
+    font-size: 100px;
+    color: #b920b2;
+    margin-top: 40px;    /* Move para baixo */
+    margin-left: 150px;  /* Move para a direita */
+}
+
+/* GlossipGold */
+#glossipgold .texto h1 {
+    font-size: 100px;
+    color: #000000;
+    margin-top: 70px;    /* Move para baixo */
+    margin-left: 200px;  /* Move para a esquerda */
 }
